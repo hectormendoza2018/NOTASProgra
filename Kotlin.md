@@ -42,6 +42,16 @@ str?.length
 fun main(args: Array<String>)
 ```
 
+### Funcion con parametros con valor previo
+```java
+fun calcAmount(amt: Int, interes: Double=0.04): Int{
+```
+
+### Para crear una función con sobrecarga
+```Java
+@JvmOverloads
+```
+
 ### Ejemplos de funciones
 ```java
 fun sumar(a:Int, b:Int): Int{
@@ -50,8 +60,21 @@ fun sumar(a:Int, b:Int): Int{
 
 fun sumar(a:Int, b:Int) = a + b
 ```
+## Clases
 
-### Clase
+### Usar clases de Kotlin en java
+- deben llamarse con el nombre de la clase y agregarle tk al final.
+- por ejemplo para usar el método sumar de la clase operaciones:
+```java
+OperacionesKt.sumar(5,4)
+```
+
+### Usar un alias para los archivos de Kotlin
+```java
+@file: JvmName("Mapas")
+```
+
+### CrearClase
 ```java
 class Persona
 ```
@@ -164,3 +187,12 @@ poblaciones["Guatemala"]=12
 ```java
 println(poblaciones["Guatemala"]
 ```
+
+## Jar
+### Crear Jar en IntelliJ IDEA
+File -> Project Structure -> Artifacts
+
+ \+ Jar
+- seleccionar la clase que tiene main
+- seleccionar el directorio del proyecto
+ 
